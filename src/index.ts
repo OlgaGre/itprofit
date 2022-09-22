@@ -1,1 +1,5 @@
-console.log('ff')
+import {scroll} from './scroll'
+
+
+
+document.addEventListener('wheel', scroll);
