@@ -22,8 +22,18 @@ if (el != undefined && elWrite != undefined) {
 
  let styleLeft:number  = +el.left.substring( 0, el.left.length - 2 );
  let styleTop:number  = +el.left.substring( 0, el.left.length - 2 );
-elWrite.style.left =  `${random(styleLeft) + styleLeft }px`; 
+// elWrite.style.left =  `${random(styleLeft) + styleLeft }px`; 
 elWrite.style.top =  `${random( styleTop) + styleTop }px`; 
+if(coorX < styleLeft){
+  elWrite.style.left =  `${styleLeft - random(styleLeft)  }px`; 
+} else{
+  elWrite.style.left =  `${ styleLeft + random(styleLeft)  }px`; 
+}
+if (coorY < styleTop ) {
+  elWrite.style.top =  `${styleTop - random( styleTop)  }px`; 
+} else{
+  elWrite.style.top =  `${random( styleTop) + styleTop    }px`; 
+}
   
 }
 // document.getElementById( `ellipse${i+1}` : string )?.style.left += 10px;

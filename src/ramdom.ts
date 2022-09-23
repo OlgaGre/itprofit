@@ -1,5 +1,5 @@
 export function random(x: number) {
-  let randomPercent: number = Math.floor(Math.random() * (150 - 100) + 100);
+  let randomPercent: number = Math.floor(Math.random() * (15 - 10) + 10);
   
 
 return (x / 100) * randomPercent;
