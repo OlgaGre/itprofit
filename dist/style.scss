@@ -6,10 +6,11 @@
 
 .wrapper {
 
-width: 1440px;
+  width: 1440px;
   height: 882px;
-  background-color:  #8DBDBA;
-  
+  background-color: #8DBDBA;
+
+
 
   h1 {
     position: absolute;
@@ -18,56 +19,167 @@ width: 1440px;
     z-index: 10;
   }
 }
-.carousel-wrapper{
- 
+
+.carousel-wrapper {
   overflow: hidden;
-  
+
 }
+
 .carousel {
   width: 9999px;
-
-
-
 }
 
 .screen {
- 
-    background-color: transparent;
-    width: 1440px;
-    height: 882px;
- 
- display: inline-block;
 
-    .img img{
-      width: 668px;
-      height: 432px;
-    }
+  background-color: transparent;
+  width: 1440px;
+  height: 882px;
+
+  display: inline-block;
+
+  .img img {
+    width: 668px;
+    height: 432px;
   }
 
-.scroll-left{
+  .ellipses-wraper {
+    position: absolute;
+    width: 1440px;
+    height: 882px;
+    overflow: hidden;
+  }
+}
+
+.scroll-left {
   position: relative;
   animation-name: leftAnimation;
-  animation-duration: 4s ;
-  //transition: linear;
+  animation-duration: 4s;
+
   transition-timing-function: linear;
   animation-fill-mode: forwards;
 }
-.scroll-right{
+
+.scroll-right {
   position: relative;
   animation-name: rightAnimation;
-  animation-duration: 4s ;
-//  transition: linear;
+  animation-duration: 4s;
+
   transition-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 
 @keyframes leftAnimation {
-  0% {background-color: #8DBDBA; left: 0;}
-  100% {background-color: #8675BA; left: -1440px;}
+  0% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+
+  100% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
 }
 
 @keyframes rightAnimation {
-  0% {background-color: #8675BA; left: -1440px}
-  100% {background-color: #8DBDBA; left: 0}
+  0% {
+    background-color: #8675BA;
+    left: -1440px
+  }
+
+  100% {
+    background-color: #8DBDBA;
+    left: 0
+  }
 }
+
+#first-screen {
+  .ellipse {
+    position: absolute;
+
+
+    background: linear-gradient(131.29deg, rgba(225, 255, 244, 0.3) 1.1%, rgba(20, 54, 41, 0) 108.32%),
+      radial-gradient(32.42% 32.42% at 46.83% 18.92%, rgba(255, 255, 255, 0.147) 0%, rgba(100, 117, 110, 0) 100%),
+      linear-gradient(0deg, rgba(68, 104, 90, 0.44), rgba(68, 104, 90, 0.44)), url(depositphotos_42701011-stock-photo-frosted-glass-texture.jpg);
+    background-blend-mode: normal, normal, normal, multiply;
+    box-shadow: 8px 24px 60px rgba(21, 53, 30, 0.1), inset 2.29395px 2.29395px 2.29395px rgba(73, 100, 87, 0.05);
+    backdrop-filter: blur(30px);
+
+
+    border-radius: 50%;
+
+  }
+
+ 
+
+}
+
+.display-none {
+  display: none;
+}
+
+#second-screen {
+
+  .ellipse {
+    position: absolute;
+    background: linear-gradient(131.29deg, rgba(165, 185, 255, 0.24) 1.1%, rgba(119, 124, 138, 0) 108.32%),
+      radial-gradient(32.42% 32.42% at 46.83% 18.92%, rgba(255, 255, 255, 0.147) 0%, rgba(62, 75, 119, 0) 100%),
+      linear-gradient(0deg, rgba(141, 104, 177, 0.4), rgba(141, 104, 177, 0.4));
+    background-blend-mode: normal, normal, normal, multiply;
+    box-shadow: 29px 54px 56px rgba(36, 52, 102, 0.25), inset 2.29395px 2.29395px 2.29395px rgba(84, 101, 157, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 50%;
+
+
+
+
+  }
+
+
+}
+
+#ellipse1 {
+  width: 282.76px;
+  height: 282.76px;
+  left: 231px;
+  top: 57.26px;
+}
+
+#ellipse2 {
+  width: 330.66px;
+  height: 330.66px;
+  left: 1052px;
+  top: 684.42px;
+}
+
+#ellipse3 {
+  width: 222.85px;
+  height: 222.85px;
+  left: -2px;
+  top: 696.81px;
+}
+#ellipse4 {
+
+  width: 331.65px;
+  height: 331.65px;
+  left: -152px;
+  top: -83.23px;
+}
+
+#ellipse5 {
+  width: 192.32px;
+  height: 192.32px;
+  left: 588px;
+  top: 68.87px;
+}
+
+#ellipse6 {
+  width: 316.24px;
+  height: 316.24px;
+  left: 1064px;
+  top: 611.25px;
+}
+// .move-ellipses{
+//   left: calc(left + );
+//   top: ;
+// }
