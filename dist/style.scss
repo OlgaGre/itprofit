@@ -115,31 +115,6 @@
   animation-fill-mode: forwards;
 }
 
-
-@keyframes leftAnimation {
-  0% {
-    background-color: #8DBDBA;
-    left: 0;
-  }
-
-  100% {
-    background-color: #8675BA;
-    left: -1440px;
-  }
-}
-
-@keyframes rightAnimation {
-  0% {
-    background-color: #8675BA;
-    left: -1440px
-  }
-
-  100% {
-    background-color: #8DBDBA;
-    left: 0
-  }
-}
-
 #first-screen {
   .ellipse {
     position: absolute;
@@ -244,6 +219,12 @@
   border: 0.5px solid rgba(64, 89, 80, 0.5);
   box-shadow: inset 0.860527px 0.860527px 0.860527px rgba(53, 74, 66, 0.2);
   backdrop-filter: blur(15px);
+  animation-name: contentDiv;
+  animation-duration: 4s;
+  // animation-delay: 2.5s;
+
+  transition-timing-function: linear;
+  animation-fill-mode: forwards;
 
   .buttons {
 
@@ -303,6 +284,10 @@
 
       background: rgba(0, 37, 23, 0.2);
       border: 1px solid rgba(226, 226, 226, 0.5);
+      padding-top: 20px;
+    p{
+      text-align: center 
+    }  
     }
   }
 
@@ -319,4 +304,38 @@
 
     color: #F5F5F5;
   }
+}
+
+//animations
+
+
+
+@keyframes leftAnimation {
+  0% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+
+  100% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
+}
+
+@keyframes rightAnimation {
+  0% {
+    background-color: #8675BA;
+    left: -1440px
+  }
+
+  100% {
+    background-color: #8DBDBA;
+    left: 0
+  }
+}
+
+@keyframes contentDiv {
+  0% {opacity: 0;} 
+  30%{opacity: 0;}
+ 100% {opacity: 1;}
 }

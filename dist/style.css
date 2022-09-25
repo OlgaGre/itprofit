@@ -96,47 +96,6 @@
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes leftAnimation {
-  0% {
-    background-color: #8DBDBA;
-    left: 0;
-  }
-  100% {
-    background-color: #8675BA;
-    left: -1440px;
-  }
-}
-
-@keyframes leftAnimation {
-  0% {
-    background-color: #8DBDBA;
-    left: 0;
-  }
-  100% {
-    background-color: #8675BA;
-    left: -1440px;
-  }
-}
-@-webkit-keyframes rightAnimation {
-  0% {
-    background-color: #8675BA;
-    left: -1440px;
-  }
-  100% {
-    background-color: #8DBDBA;
-    left: 0;
-  }
-}
-@keyframes rightAnimation {
-  0% {
-    background-color: #8675BA;
-    left: -1440px;
-  }
-  100% {
-    background-color: #8DBDBA;
-    left: 0;
-  }
-}
 #first-screen .ellipse {
   position: absolute;
   background: linear-gradient(131.29deg, rgba(225, 255, 244, 0.3) 1.1%, rgba(20, 54, 41, 0) 108.32%), radial-gradient(32.42% 32.42% at 46.83% 18.92%, rgba(255, 255, 255, 0.147) 0%, rgba(100, 117, 110, 0) 100%), linear-gradient(0deg, rgba(68, 104, 90, 0.44), rgba(68, 104, 90, 0.44));
@@ -220,6 +179,13 @@
   box-shadow: inset 0.860527px 0.860527px 0.860527px rgba(53, 74, 66, 0.2);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
+  -webkit-animation-name: contentDiv;
+          animation-name: contentDiv;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  transition-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 .content .buttons .btn {
   display: inline-block;
@@ -267,6 +233,10 @@
 .content .table div {
   background: rgba(0, 37, 23, 0.2);
   border: 1px solid rgba(226, 226, 226, 0.5);
+  padding-top: 20px;
+}
+.content .table div p {
+  text-align: center;
 }
 .content .table-content {
   font-family: "Montserrat";
@@ -277,4 +247,68 @@
   /* identical to box height, or 138% */
   /* Neutral/Background */
   color: #F5F5F5;
+}
+
+@-webkit-keyframes leftAnimation {
+  0% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+  100% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
+}
+
+@keyframes leftAnimation {
+  0% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+  100% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
+}
+@-webkit-keyframes rightAnimation {
+  0% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
+  100% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+}
+@keyframes rightAnimation {
+  0% {
+    background-color: #8675BA;
+    left: -1440px;
+  }
+  100% {
+    background-color: #8DBDBA;
+    left: 0;
+  }
+}
+@-webkit-keyframes contentDiv {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes contentDiv {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
