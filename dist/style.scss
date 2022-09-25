@@ -12,11 +12,22 @@
 
 
 
-  h1 {
+  .title {
     position: absolute;
     top: 100px;
     left: 100px;
     z-index: 10;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 60px;
+    /* identical to box height, or 94% */
+
+
+    /* Neutral/Background */
+
+    color: #F5F5F5;
   }
 }
 
@@ -37,9 +48,45 @@
 
   display: inline-block;
 
-  .img img {
-    width: 668px;
-    height: 432px;
+  .img {
+    position: absolute;
+    width: 1017.27px;
+    height: 576.09px;
+    left: 337.66px;
+    top: 147.58px;
+
+    .rectangle {
+      //  position: absolute;
+      width: 1017.27px;
+      height: 36.42px;
+      left: 342.98px;
+      top: 687.22px;
+
+      background: linear-gradient(180deg, rgba(102, 102, 102, 0.3) 0%, rgba(102, 102, 102, 0.3) 50%, rgba(0, 0, 0, 0.15) 54.17%, rgba(0, 0, 0, 0.3) 100%), linear-gradient(270deg, #212121 0%, #555555 50%, #212121 100%);
+      transform: rotate(-0.57deg);
+
+    }
+
+    img {
+
+      display: block;
+      margin: 0 auto;
+
+      width: 742.84px;
+      height: 496.84px;
+
+      background: linear-gradient(117.55deg, rgba(22, 48, 39, 0.02) 1.22%,
+          rgba(69, 98, 87, 0) 119.48%);
+      border: 1.54049px solid #444444;
+      border-radius: 9.24292px 9.24292px 0px 0px;
+      transform: rotate(-0.57deg);
+
+
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 70.66%, rgba(51, 51, 51, 0.643) 90.82%, rgba(0, 0, 0, 0.94) 102.78%), linear-gradient(115.51deg, #333333 0%, #596368 53.13%, #333333 100%);
+      border: 1.54049px solid #333333;
+      border-radius: 18.4858px;
+      transform: rotate(-0.57deg);
+    }
   }
 
   .ellipses-wraper {
@@ -100,7 +147,7 @@
 
     background: linear-gradient(131.29deg, rgba(225, 255, 244, 0.3) 1.1%, rgba(20, 54, 41, 0) 108.32%),
       radial-gradient(32.42% 32.42% at 46.83% 18.92%, rgba(255, 255, 255, 0.147) 0%, rgba(100, 117, 110, 0) 100%),
-      linear-gradient(0deg, rgba(68, 104, 90, 0.44), rgba(68, 104, 90, 0.44)), url(depositphotos_42701011-stock-photo-frosted-glass-texture.jpg);
+      linear-gradient(0deg, rgba(68, 104, 90, 0.44), rgba(68, 104, 90, 0.44));
     background-blend-mode: normal, normal, normal, multiply;
     box-shadow: 8px 24px 60px rgba(21, 53, 30, 0.1), inset 2.29395px 2.29395px 2.29395px rgba(73, 100, 87, 0.05);
     backdrop-filter: blur(30px);
@@ -110,7 +157,7 @@
 
   }
 
- 
+
 
 }
 
@@ -143,6 +190,7 @@
   height: 282.76px;
   left: 231px;
   top: 57.26px;
+  z-index: 1;
 }
 
 #ellipse2 {
@@ -158,6 +206,7 @@
   left: -2px;
   top: 696.81px;
 }
+
 #ellipse4 {
 
   width: 331.65px;
@@ -171,6 +220,7 @@
   height: 192.32px;
   left: 588px;
   top: 68.87px;
+  z-index: 1;
 }
 
 #ellipse6 {
@@ -178,8 +228,95 @@
   height: 316.24px;
   left: 1064px;
   top: 611.25px;
+  z-index: 1;
 }
-// .move-ellipses{
-//   left: calc(left + );
-//   top: ;
-// }
+
+.content {
+  padding: 20px;
+  position: absolute;
+  width: 668px;
+  height: 432px;
+  left: 100px;
+  top: 350px;
+  display: grid;
+  background: linear-gradient(0deg, rgba(0, 37, 23, 0.3), rgba(0, 37, 23, 0.3)), url(depositphotos_42701011-stock-photo-frosted-glass-texture.jpg);
+  background-blend-mode: normal, multiply;
+  border: 0.5px solid rgba(64, 89, 80, 0.5);
+  box-shadow: inset 0.860527px 0.860527px 0.860527px rgba(53, 74, 66, 0.2);
+  backdrop-filter: blur(15px);
+
+  .buttons {
+
+    .btn {
+      display: inline-block;
+      margin-right: 30px;
+      border: 1px solid #F5F5F5;
+      width: 48px;
+      height: 48px;
+      border: 1px solid #F5F5F5;
+      color: #F5F5F5;
+      padding: 15px;
+
+      p {
+        border: 1.5px solid #F5F5F5;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+    }
+  }
+
+  .content-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    color: #F5F5F5;
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #F5F5F5;
+  }
+
+
+
+  .table-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #F5F5F5;
+  }
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 94px;
+
+    div {
+
+      background: rgba(0, 37, 23, 0.2);
+      border: 1px solid rgba(226, 226, 226, 0.5);
+    }
+  }
+
+  .table-content {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    /* identical to box height, or 138% */
+
+
+    /* Neutral/Background */
+
+    color: #F5F5F5;
+  }
+}
